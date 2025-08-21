@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 const UserCard = ({type}:{type: string}) => {
+  const label = `${type}${type.endsWith("s") ? "" : "s"}`;
+
   return (
     <div className="rounded-2xl odd:bg-lamaPurple even:bg-lamaYellow p-4 flex-1 min-w-[130px]">
       <div className="flex justify-between items-center">
@@ -13,7 +15,7 @@ const UserCard = ({type}:{type: string}) => {
         1,234
       </h1>
       <h2 className="capitalize text-sm font-medium text-gray-500">
-        {type}s 
+        {label}
       </h2>
     </div>
   )
