@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useState } from "react";
+import { JSX, useState } from "react";
 
 // Lazy Loading
 const TeacherForm = dynamic(() => import("./forms/TeacherForm"), {
